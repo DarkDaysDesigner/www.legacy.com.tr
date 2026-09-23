@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="tr" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LEGACY — Türkiye'nin Yeni Enerjisi</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+      background-color: #030304;
+      color: #f5f5f7;
+    }
+    .blur-nav {
+      background: rgba(8, 8, 10, 0.8);
+      backdrop-filter: blur(20px);
+      -webkit-backdrop-filter: blur(20px);
+    }
+    .car-card {
+      background: linear-gradient(180deg, rgba(25, 25, 30, 0.45) 0%, rgba(12, 12, 14, 0.85) 100%);
+      border: 1px solid rgba(255, 255, 255, 0.07);
+    }
+    .car-card:hover {
+      border-color: rgba(255, 255, 255, 0.25);
+    }
+  </style>
+</head>
+<body class="selection:bg-white selection:text-black">
+
+  <!-- Navigasyon Çubuğu -->
+  <header class="w-full fixed top-0 z-50 blur-nav border-b border-white/5 transition-all">
+    <div class="max-w-[1600px] mx-auto px-6 lg:px-12 h-20 flex items-center justify-between">
+      
+      <!-- Logo + TR -->
+      <div class="flex items-center gap-4">
+        <a href="#" class="flex items-center gap-3">
+          <svg class="w-5 h-6 text-white fill-current" viewBox="0 0 24 24">
+            <path d="M13 2L3 14h8l-2 8 12-14h-8l2-6z"/>
+          </svg>
+          <span class="text-xl font-bold tracking-[0.35em] text-white">LEGACY</span>
+        </a>
+        <span class="text-[10px] font-mono px-2 py-0.5 rounded border border-white/20 text-neutral-300">TR</span>
+      </div>
+
+      <!-- Menü -->
+      <nav class="hidden xl:flex items-center gap-8 text-xs font-semibold tracking-[0.15em] uppercase text-neutral-400">
+        <a href="#modeller" class="hover:text-white transition">Modeller</a>
+        <a href="#" class="hover:text-white transition">Teknoloji</a>
+        <a href="#" class="hover:text-white transition">Sürdürülebilirlik</a>
+        <a href="#hakkimizda" class="hover:text-white transition">Hakkımızda</a>
+        <a href="#" class="hover:text-white transition">Servis</a>
+        <a href="#" class="hover:text-white transition">İletişim</a>
+      </nav>
+
+      <!-- Arama & Konfigüratör -->
+      <div class="flex items-center gap-6">
+        <button class="text-neutral-400 hover:text-white transition" aria-label="Arama">
+          <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path>
+          </svg>
+        </button>
+        <button class="text-xs font-semibold px-5 py-2.5 rounded-full border border-white/30 text-white hover:bg-white hover:text-black transition tracking-wider uppercase">
+          Konfigüratör
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Bölümü (Lansman Panoraması) -->
+  <section class="relative w-full pt-20 overflow-hidden bg-black flex flex-col items-center justify-center">
+    <div class="w-full max-w-[1920px] relative">
+      <img src="33652.png" alt="Legacy Filo Lansmanı" class="w-full h-auto object-cover block">
+      
+      <!-- Görselin solundaki butonların üzerine gelen görünmez tıklama katmanları -->
+      <a href="#modeller" class="absolute left-[3.2%] top-[60.5%] w-[8%] h-[8%] rounded-full cursor-pointer z-10" title="Modelleri Keşfet"></a>
+      <a href="#hakkimizda" class="absolute left-[11.8%] top-[60.5%] w-[7.5%] h-[8%] rounded-full cursor-pointer z-10" title="Markayı Keşfet"></a>
+      
+      <!-- Alt geçiş gradyanı -->
+      <div class="absolute bottom-0 inset-x-0 h-24 bg-gradient-to-t from-[#030304] to-transparent pointer-events-none"></div>
+    </div>
+  </section>
+
+  <!-- Modeller Bölümü -->
+  <section id="modeller" class="py-20 px-6 lg:px-12 max-w-[1600px] mx-auto">
+    <div class="flex flex-col md:flex-row md:items-end justify-between mb-12">
+      <div>
+        <span class="text-xs font-semibold tracking-[0.25em] uppercase text-neutral-500 mb-2 block">— MODELLERİMİZ</span>
+        <h2 class="text-3xl lg:text-5xl font-bold tracking-tight text-white">
+          Her Yolculukta<br>Bir Legacy
+        </h2>
+      </div>
+      <a href="#" class="mt-4 md:mt-0 text-xs font-semibold tracking-widest uppercase text-neutral-400 hover:text-white transition flex items-center gap-2">
+        Tüm Modeller <span>→</span>
+      </a>
+    </div>
+
+    <!-- 7'li Grid Kart Listesi -->
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 xl:grid-cols-7 gap-4">
+      
+      <!-- 1. Model: Sport -->
+      <div class="car-card rounded-2xl p-4 flex flex-col justify-between transition-all duration-300 group cursor-pointer">
+        <div class="aspect-[4/3] w-full overflow-hidden rounded-xl bg-black/50 mb-4">
+          <div class="w-full h-full bg-cover bg-[position:0%_center] group-hover:scale-105 transition-transform duration-500" style="background-image: url('30552.png');"></div>
+        </div>
+        <div>
+          <h3 class="text-xs font-bold uppercase tracking-wider text-white mb-1">LEGACY SPORT</h3>
+          <p class="text-[11px] text-neutral-400 font-light">Dinamik. Cesur. Senin.</p>
+        </div>
+        <div class="flex justify-end pt-4">
+          <span class="text-xs text-neutral-500 group-hover:text-white transition">→</span>
+        </div>
+      </div>
+
+      <!-- 2. Model: E-Tech -->
+      <div class="car-card rounded-2xl p-4 flex flex-col justify-between transition-all duration-300 group cursor-pointer">
+        <div class="aspect-[4/3] w-full overflow-hidden rounded-xl bg-black/50 mb-4">
+          <div class="w-full h-full bg-cover bg-[position:0%_center] group-hover:scale-105 transition-transform duration-500" style="background-image: url('22708.png');"></div>
+        </div>
+        <div>
+          <h3 class="text-xs font-bold uppercase tracking-wider text-white mb-1">LEGACY E-TECH</h3>
+          <p class="text-[11px] text-neutral-400 font-light">Güç. Teknoloji. Gelecek.</p>
+        </div>
+        <div class="flex justify-end pt-4">
+          <span class="text-xs text-neutral-500 group-hover:text-white transition">→</span>
+        </div>
+      </div>
+
+      <!-- 3. Model: Pure EV -->
+      <div class="car-card rounded-2xl p-4 flex flex-col justify-between transition-all duration-300 group cursor-pointer">
+        <div class="aspect-[4/3] w-full overflow-hidden rounded-xl bg-black/50 mb-4">
+          <div class="w-full h-full bg-cover bg-[position:0%_center] group-hover:scale-105 transition-transform duration-500" style="background-image: url('22706.png');"></div>
+        </div>
+        <div>
+          <h3 class="text-xs font-bold uppercase tracking-wider text-white mb-1">LEGACY PURE EV</h3>
+          <p class="text-[11px] text-neutral-400 font-light">Sessiz. Güçlü. Elektrikli.</p>
+        </div>
+        <div class="flex justify-end pt-4">
+          <span class="text-xs text-neutral-500 group-hover:text-white transition">→</span>
+        </div>
+      </div>
+
+      <!-- 4. Model: SUV -->
+      <div class="car-card rounded-2xl p-4 flex flex-col justify-between transition-all duration-300 group cursor-pointer">
+        <div class="aspect-[4/3] w-full overflow-hidden rounded-xl bg-black/50 mb-4">
+          <div class="w-full h-full bg-cover bg-[position:0%_center] group-hover:scale-105 transition-transform duration-500" style="background-image: url('22707.png');"></div>
+        </div>
+        <div>
+          <h3 class="text-xs font-bold uppercase tracking-wider text-white mb-1">LEGACY SUV</h3>
+          <p class="text-[11px] text-neutral-400 font-light">Aileye. Maceraya. Her Yere.</p>
+        </div>
+        <div class="flex justify-end pt-4">
+          <span class="text-xs text-neutral-500 group-hover:text-white transition">→</span>
+        </div>
+      </div>
+
+      <!-- 5. Model: Terra -->
+      <div class="car-card rounded-2xl p-4 flex flex-col justify-between transition-all duration-300 group cursor-pointer">
+        <div class="aspect-[4/3] w-full overflow-hidden rounded-xl bg-black/50 mb-4">
+          <div class="w-full h-full bg-cover bg-[position:0%_center] group-hover:scale-105 transition-transform duration-500" style="background-image: url('22028.png');"></div>
+        </div>
+        <div>
+          <h3 class="text-xs font-bold uppercase tracking-wider text-white mb-1">LEGACY TERRA</h3>
+          <p class="text-[11px] text-neutral-400 font-light">Zorluğa Meydan Oku.</p>
+        </div>
+        <div class="flex justify-end pt-4">
+          <span class="text-xs text-neutral-500 group-hover:text-white transition">→</span>
+        </div>
+      </div>
+
+      <!-- 6. Model: Classic -->
+      <div class="car-card rounded-2xl p-4 flex flex-col justify-between transition-all duration-300 group cursor-pointer">
+        <div class="aspect-[4/3] w-full overflow-hidden rounded-xl bg-black/50 mb-4">
+          <div class="w-full h-full bg-cover bg-[position:0%_center] group-hover:scale-105 transition-transform duration-500" style="background-image: url('22022.png');"></div>
+        </div>
+        <div>
+          <h3 class="text-xs font-bold uppercase tracking-wider text-white mb-1">LEGACY CLASSIC</h3>
+          <p class="text-[11px] text-neutral-400 font-light">Geçmişten İlham, Geleceğe.</p>
+        </div>
+        <div class="flex justify-end pt-4">
+          <span class="text-xs text-neutral-500 group-hover:text-white transition">→</span>
+        </div>
+      </div>
+
+      <!-- 7. Model: Hyper GT -->
+      <div class="car-card rounded-2xl p-4 flex flex-col justify-between transition-all duration-300 group cursor-pointer">
+        <div class="aspect-[4/3] w-full overflow-hidden rounded-xl bg-black/50 mb-4">
+          <div class="w-full h-full bg-cover bg-[position:0%_center] group-hover:scale-105 transition-transform duration-500" style="background-image: url('22023.png');"></div>
+        </div>
+        <div>
+          <h3 class="text-xs font-bold uppercase tracking-wider text-white mb-1">LEGACY HYPER GT</h3>
+          <p class="text-[11px] text-neutral-400 font-light">Sınırları Aş.</p>
+        </div>
+        <div class="flex justify-end pt-4">
+          <span class="text-xs text-neutral-500 group-hover:text-white transition">→</span>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Biz Kimiz / Marka Vizyonu -->
+  <section id="hakkimizda" class="py-20 px-6 lg:px-12 max-w-[1600px] mx-auto border-t border-white/5">
+    <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+      
+      <!-- Sol Bagaj Detayı -->
+      <div class="lg:col-span-4 rounded-3xl overflow-hidden border border-white/10 aspect-[4/3] bg-neutral-900">
+        <img src="33647.png" alt="Legacy Bagaj Detayı" class="w-full h-full object-cover object-bottom filter brightness-95">
+      </div>
+
+      <!-- Orta Manifest Metni -->
+      <div class="lg:col-span-4">
+        <span class="text-xs font-semibold tracking-[0.25em] uppercase text-neutral-500 mb-2 block">— BİZ KİMİZ</span>
+        <h3 class="text-3xl font-bold tracking-tight text-white mb-4">Türkiye'nin<br>Otomotiv Markası</h3>
+        <p class="text-xs leading-relaxed text-neutral-400 mb-6 font-light">
+          Legacy, Türk mühendisliğinin gücüyle doğan, geleceğin mobilite çözümlerini bugünden sunar. Tutkumuz, sadece otomobil üretmek değil; daha iyi bir yarın için yol almaktır.
+        </p>
+        <button class="px-6 py-2.5 rounded-full border border-white/20 text-xs font-semibold tracking-wider uppercase text-white hover:bg-white hover:text-black transition">
+          Daha Fazla →
+        </button>
+      </div>
+
+      <!-- Sağ Sütun: 4 Temel Değer -->
+      <div class="lg:col-span-4 space-y-6 lg:pl-8 border-t lg:border-t-0 lg:border-l border-white/5 pt-8 lg:pt-0">
+        
+        <div class="flex items-start gap-4">
+          <span class="text-neutral-500 text-lg">⚡</span>
+          <div>
+            <h4 class="text-xs font-bold tracking-wider uppercase text-white">Yerli Üretim</h4>
+            <p class="text-[11px] text-neutral-400 font-light">Türkiye'de tasarlanır, Türkiye'de üretilir.</p>
+          </div>
+        </div>
+
+        <div class="flex items-start gap-4">
+          <span class="text-neutral-500 text-lg">🔋</span>
+          <div>
+            <h4 class="text-xs font-bold tracking-wider uppercase text-white">Elektrikli Gelecek</h4>
+            <p class="text-[11px] text-neutral-400 font-light">Temiz enerji, temiz bir dünya.</p>
+          </div>
+        </div>
+
+        <div class="flex items-start gap-4">
+          <span class="text-neutral-500 text-lg">⚙️</span>
+          <div>
+            <h4 class="text-xs font-bold tracking-wider uppercase text-white">İnovasyon</h4>
+            <p class="text-[11px] text-neutral-400 font-light">Sürekli gelişen teknoloji.</p>
+          </div>
+        </div>
+
+        <div class="flex items-start gap-4">
+          <span class="text-neutral-500 text-lg">🌱</span>
+          <div>
+            <h4 class="text-xs font-bold tracking-wider uppercase text-white">Sürdürülebilirlik</h4>
+            <p class="text-[11px] text-neutral-400 font-light">Bugünün kaynakları, yarının nesilleri için.</p>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="border-t border-white/10 py-8 px-6 lg:px-12 bg-black">
+    <div class="max-w-[1600px] mx-auto flex flex-col md:flex-row items-center justify-between gap-4 text-xs text-neutral-500 font-medium">
+      <div class="flex items-center gap-3">
+        <svg class="w-4 h-5 text-white fill-current" viewBox="0 0 24 24">
+          <path d="M13 2L3 14h8l-2 8 12-14h-8l2-6z"/>
+        </svg>
+        <span class="font-bold tracking-[0.3em] text-white">LEGACY</span>
+      </div>
+      <p class="tracking-widest uppercase text-[11px]">Daha iyi bir yarın için</p>
+      <div class="flex items-center gap-6 text-[11px]">
+        <span>TR / EN</span>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
