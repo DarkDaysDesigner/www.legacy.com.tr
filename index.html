@@ -15,7 +15,7 @@
       color: #f5f5f7;
     }
     .blur-nav {
-      background: rgba(8, 8, 10, 0.8);
+      background: rgba(8, 8, 10, 0.85);
       backdrop-filter: blur(20px);
       -webkit-backdrop-filter: blur(20px);
     }
@@ -24,10 +24,9 @@
       border: 1px solid rgba(255, 255, 255, 0.07);
     }
     .car-card:hover, .car-card.active {
-      border-color: rgba(255, 255, 255, 0.35);
+      border-color: rgba(255, 255, 255, 0.4);
       background: linear-gradient(180deg, rgba(35, 35, 42, 0.6) 0%, rgba(18, 18, 22, 0.95) 100%);
     }
-    /* 3D Ters Yüz Efekti */
     .perspective-container {
       perspective: 2000px;
     }
@@ -55,9 +54,9 @@
 </head>
 <body class="selection:bg-white selection:text-black">
 
-  <!-- Navigasyon -->
   <header class="w-full fixed top-0 z-50 blur-nav border-b border-white/5 transition-all">
     <div class="max-w-[1600px] mx-auto px-6 lg:px-12 h-20 flex items-center justify-between">
+      
       <div class="flex items-center gap-4">
         <a href="#" class="flex items-center gap-3">
           <svg class="w-5 h-6 text-white fill-current" viewBox="0 0 24 24">
@@ -84,17 +83,17 @@
     </div>
   </header>
 
-  <!-- Hero Bölümü (Lansman Panoraması) -->
   <section class="relative w-full pt-20 overflow-hidden bg-black flex flex-col items-center justify-center">
     <div class="w-full max-w-[1920px] relative">
       <img src="33652.png" alt="Legacy Filo Lansmanı" class="w-full h-auto object-cover block">
+      
       <a href="#modeller" class="absolute left-[3.2%] top-[60.5%] w-[8%] h-[8%] rounded-full cursor-pointer z-10" title="Modelleri Keşfet"></a>
       <a href="#hakkimizda" class="absolute left-[11.8%] top-[60.5%] w-[7.5%] h-[8%] rounded-full cursor-pointer z-10" title="Markayı Keşfet"></a>
+      
       <div class="absolute bottom-0 inset-x-0 h-24 bg-gradient-to-t from-[#030304] to-transparent pointer-events-none"></div>
     </div>
   </section>
 
-  <!-- Modeller Izgarası (Tıklanabilir 7 Model) -->
   <section id="modeller" class="py-16 px-6 lg:px-12 max-w-[1600px] mx-auto">
     <div class="flex flex-col md:flex-row md:items-end justify-between mb-10">
       <div>
@@ -102,14 +101,12 @@
         <h2 class="text-3xl lg:text-5xl font-bold tracking-tight text-white">
           Her Yolculukta Bir Legacy
         </h2>
-        <p class="text-xs text-neutral-400 mt-2">Detaylı özellikleri ve fiyatlandırmayı görmek için bir araca tıklayın.</p>
+        <p class="text-xs text-neutral-400 mt-2">Detaylı özellikleri, donanımları ve fiyatlandırmayı görmek için bir araca tıklayın.</p>
       </div>
     </div>
 
-    <!-- 7'li Grid Kart Listesi -->
     <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 xl:grid-cols-7 gap-4">
       
-      <!-- 1. Model: Pars (Sport) -->
       <div onclick="selectVehicle(0)" id="card-0" class="car-card rounded-2xl p-4 flex flex-col justify-between transition-all duration-300 group cursor-pointer active">
         <div class="aspect-[4/3] w-full overflow-hidden rounded-xl bg-black/50 mb-3">
           <div class="w-full h-full bg-cover bg-[position:0%_center] group-hover:scale-105 transition-transform duration-500" style="background-image: url('30552.png');"></div>
@@ -124,7 +121,6 @@
         </div>
       </div>
 
-      <!-- 2. Model: E-Tech -->
       <div onclick="selectVehicle(1)" id="card-1" class="car-card rounded-2xl p-4 flex flex-col justify-between transition-all duration-300 group cursor-pointer">
         <div class="aspect-[4/3] w-full overflow-hidden rounded-xl bg-black/50 mb-3">
           <div class="w-full h-full bg-cover bg-[position:0%_center] group-hover:scale-105 transition-transform duration-500" style="background-image: url('22708.png');"></div>
@@ -139,7 +135,6 @@
         </div>
       </div>
 
-      <!-- 3. Model: Miras (Pure EV) -->
       <div onclick="selectVehicle(2)" id="card-2" class="car-card rounded-2xl p-4 flex flex-col justify-between transition-all duration-300 group cursor-pointer">
         <div class="aspect-[4/3] w-full overflow-hidden rounded-xl bg-black/50 mb-3">
           <div class="w-full h-full bg-cover bg-[position:0%_center] group-hover:scale-105 transition-transform duration-500" style="background-image: url('22706.png');"></div>
@@ -154,7 +149,6 @@
         </div>
       </div>
 
-      <!-- 4. Model: Legacy SUV -->
       <div onclick="selectVehicle(3)" id="card-3" class="car-card rounded-2xl p-4 flex flex-col justify-between transition-all duration-300 group cursor-pointer">
         <div class="aspect-[4/3] w-full overflow-hidden rounded-xl bg-black/50 mb-3">
           <div class="w-full h-full bg-cover bg-[position:0%_center] group-hover:scale-105 transition-transform duration-500" style="background-image: url('22707.png');"></div>
@@ -169,14 +163,13 @@
         </div>
       </div>
 
-      <!-- 5. Model: Legacy Terra -->
       <div onclick="selectVehicle(4)" id="card-4" class="car-card rounded-2xl p-4 flex flex-col justify-between transition-all duration-300 group cursor-pointer">
         <div class="aspect-[4/3] w-full overflow-hidden rounded-xl bg-black/50 mb-3">
           <div class="w-full h-full bg-cover bg-[position:0%_center] group-hover:scale-105 transition-transform duration-500" style="background-image: url('22028.png');"></div>
         </div>
         <div>
           <h3 class="text-xs font-bold uppercase tracking-wider text-white mb-1">LEGACY TERRA</h3>
-          <p class="text-[11px] text-neutral-400 font-light">2.0 Bi-Turbo Dizel 4x4</p>
+          <p class="text-[11px] text-neutral-400 font-light">2.0 Bi-Turbo 4x4</p>
           <p class="text-[11px] text-neutral-300 font-mono mt-1 font-semibold">3.500.000 ₺</p>
         </div>
         <div class="flex justify-end pt-3">
@@ -184,14 +177,13 @@
         </div>
       </div>
 
-      <!-- 6. Model: Tayra (Classic) -->
       <div onclick="selectVehicle(5)" id="card-5" class="car-card rounded-2xl p-4 flex flex-col justify-between transition-all duration-300 group cursor-pointer">
         <div class="aspect-[4/3] w-full overflow-hidden rounded-xl bg-black/50 mb-3">
           <div class="w-full h-full bg-cover bg-[position:0%_center] group-hover:scale-105 transition-transform duration-500" style="background-image: url('22022.png');"></div>
         </div>
         <div>
           <h3 class="text-xs font-bold uppercase tracking-wider text-white mb-1">LEGACY TAYRA</h3>
-          <p class="text-[11px] text-neutral-400 font-light">Özel Üretim Restomod</p>
+          <p class="text-[11px] text-neutral-400 font-light">Özel Restomod</p>
           <p class="text-[11px] text-neutral-300 font-mono mt-1 font-semibold">8.000.000 ₺</p>
         </div>
         <div class="flex justify-end pt-3">
@@ -199,7 +191,6 @@
         </div>
       </div>
 
-      <!-- 7. Model: Legacy Hyper GT -->
       <div onclick="selectVehicle(6)" id="card-6" class="car-card rounded-2xl p-4 flex flex-col justify-between transition-all duration-300 group cursor-pointer">
         <div class="aspect-[4/3] w-full overflow-hidden rounded-xl bg-black/50 mb-3">
           <div class="w-full h-full bg-cover bg-[position:0%_center] group-hover:scale-105 transition-transform duration-500" style="background-image: url('22023.png');"></div>
@@ -217,10 +208,8 @@
     </div>
   </section>
 
-  <!-- İNTERAKTİF ARAÇ DETAY & ÖZELLİK VİTRİNİ -->
   <section id="detay-sahnesi" class="py-16 px-6 lg:px-12 max-w-[1400px] mx-auto border-t border-white/5">
     
-    <!-- Başlık & Fiyat Alanı -->
     <div class="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-8">
       <div>
         <span id="detailBadge" class="text-xs font-semibold tracking-[0.25em] uppercase text-neutral-500 mb-2 block">C SEGMENTİ SPORT HATCHBACK</span>
@@ -228,12 +217,10 @@
         <p id="detailDesc" class="text-sm text-neutral-400 font-light max-w-xl">Hafif gövde mimarisi ve yüksek torklu turbo benzinli motoruyla şehirde ve virajlarda üstün çeviklik.</p>
       </div>
 
-      <!-- Fiyat ve Paket Seçimi -->
       <div class="text-left md:text-right">
         <span class="text-[11px] uppercase tracking-widest text-neutral-400 font-semibold block mb-1">Tavsiye Edilen Satış Fiyatı</span>
         <p id="detailPrice" class="text-3xl lg:text-4xl font-mono font-bold text-white mb-3">1.587.000 ₺</p>
         
-        <!-- 4More / Paket Butonları (Varsa görünür) -->
         <div id="trimOptions" class="inline-flex rounded-full p-1 bg-white/5 border border-white/10">
           <button onclick="setTrim('standard')" id="btnTrimStd" class="px-4 py-1.5 rounded-full text-xs font-semibold bg-white text-black transition">Standart</button>
           <button onclick="setTrim('4more')" id="btnTrim4More" class="px-4 py-1.5 rounded-full text-xs font-semibold text-neutral-400 hover:text-white transition">4More (AWD)</button>
@@ -241,24 +228,20 @@
       </div>
     </div>
 
-    <!-- Büyük Sahne / 3D Döndürme Kartı -->
     <div class="relative w-full aspect-[16/9] rounded-3xl overflow-hidden border border-white/10 shadow-2xl bg-neutral-950 perspective-container mb-8">
       
       <div id="detailCardBox" class="flip-card-inner">
-        <!-- Ön Profil -->
         <div class="flip-face bg-neutral-950 flex items-center justify-center">
           <div id="detailFrontImg" class="w-full h-full bg-no-repeat bg-cover bg-[position:0%_center] transition-all duration-300" style="background-image: url('30552.png');"></div>
           <span class="absolute bottom-6 left-6 px-4 py-1.5 rounded-full bg-black/60 backdrop-blur-md text-[11px] tracking-widest uppercase font-mono text-neutral-300 border border-white/10">Ön Profil</span>
         </div>
         
-        <!-- Arka Profil -->
         <div class="flip-face flip-back bg-neutral-950 flex items-center justify-center">
           <div id="detailBackImg" class="w-full h-full bg-no-repeat bg-cover bg-[position:100%_center] transition-all duration-300" style="background-image: url('30552.png');"></div>
           <span class="absolute bottom-6 left-6 px-4 py-1.5 rounded-full bg-black/60 backdrop-blur-md text-[11px] tracking-widest uppercase font-mono text-neutral-300 border border-white/10">Arka Profil</span>
         </div>
       </div>
 
-      <!-- Çevirme Butonu -->
       <button onclick="toggleDetailFlip()" class="absolute top-6 right-6 z-20 flex items-center gap-2 px-5 py-2.5 rounded-full bg-black/60 backdrop-blur-md text-xs font-semibold tracking-wider uppercase text-white hover:bg-white hover:text-black transition border border-white/20 shadow-lg">
         <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
           <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15" />
@@ -267,10 +250,8 @@
       </button>
     </div>
 
-    <!-- Teknik Özellikler Tablosu & Konfigürasyon Barı -->
     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 p-8 rounded-3xl bg-neutral-900/60 border border-white/10 backdrop-blur-md">
       
-      <!-- 1. Motor & Güç -->
       <div class="space-y-1">
         <span class="text-[10px] font-mono tracking-widest uppercase text-neutral-500">GÜÇ VE AKTARMA</span>
         <p id="specEngine" class="text-lg font-bold text-white">1.3 TCe Benzinli</p>
@@ -278,7 +259,6 @@
         <p id="specDrive" class="text-xs text-neutral-400">Önden Çekiş (FWD) • 7 İleri EDC</p>
       </div>
 
-      <!-- 2. Performans -->
       <div class="space-y-1 border-t md:border-t-0 md:border-l border-white/10 pt-4 md:pt-0 md:pl-6">
         <span class="text-[10px] font-mono tracking-widest uppercase text-neutral-500">DİNAMİKLER</span>
         <p id="specSpeed" class="text-lg font-bold text-white font-mono">205 km/s</p>
@@ -286,7 +266,6 @@
         <p id="specWeight" class="text-xs text-neutral-400">Boş Ağırlık: 1.100 kg</p>
       </div>
 
-      <!-- 3. Menzil / Tüketim -->
       <div class="space-y-1 border-t lg:border-t-0 lg:border-l border-white/10 pt-4 lg:pt-0 lg:pl-6">
         <span class="text-[10px] font-mono tracking-widest uppercase text-neutral-500">TÜKETİM / MENZİL</span>
         <p id="specEconomy" class="text-lg font-bold text-white font-mono">5.8 lt / 100 km</p>
@@ -294,7 +273,6 @@
         <p id="specBattery" class="text-xs text-neutral-400">Yakıt Deposu: 50 Litre</p>
       </div>
 
-      <!-- 4. Renk & Sipariş Butonu -->
       <div class="flex flex-col justify-between border-t lg:border-t-0 lg:border-l border-white/10 pt-4 lg:pt-0 lg:pl-6">
         <div>
           <span class="text-[10px] font-mono tracking-widest uppercase text-neutral-500 block mb-2">GÖVDE: <strong id="colorName" class="text-white">Kapadokya Kızılı</strong></span>
@@ -315,63 +293,83 @@
     </div>
   </section>
 
-  <!-- Biz Kimiz / Marka Vizyonu -->
   <section id="hakkimizda" class="py-20 px-6 lg:px-12 max-w-[1600px] mx-auto border-t border-white/5">
-    <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+    
+    <div class="mb-8">
+      <span class="text-xs font-semibold tracking-[0.25em] uppercase text-neutral-500 mb-2 block">— BİZ KİMİZ</span>
+      <h3 class="text-3xl lg:text-5xl font-bold tracking-tight text-white">Türkiye'nin Yeni Nesil Otomotiv Gücü</h3>
+    </div>
+
+    <div class="relative w-full aspect-[16/9] lg:aspect-[21/9] rounded-3xl overflow-hidden border border-white/10 shadow-2xl bg-black mb-12 group">
+      <video autoplay muted loop playsinline class="w-full h-full object-cover">
+        <source src="33730.mp4" type="video/mp4">
+        Tarayıcınız video etiketini desteklemiyor.
+      </video>
       
-      <div class="lg:col-span-4 rounded-3xl overflow-hidden border border-white/10 aspect-[4/3] bg-neutral-900">
-        <img src="33647.png" alt="Legacy Bagaj Detayı" class="w-full h-full object-cover object-bottom filter brightness-95">
-      </div>
+      <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-black/30 pointer-events-none"></div>
 
-      <div class="lg:col-span-4">
-        <span class="text-xs font-semibold tracking-[0.25em] uppercase text-neutral-500 mb-2 block">— BİZ KİMİZ</span>
-        <h3 class="text-3xl font-bold tracking-tight text-white mb-4">Türkiye'nin<br>Otomotiv Markası</h3>
-        <p class="text-xs leading-relaxed text-neutral-400 mb-6 font-light">
-          Legacy, Türk mühendisliğinin gücüyle doğan, geleceğin mobilite çözümlerini bugünden sunar. Tutkumuz, sadece otomobil üretmek değil; daha iyi bir yarın için yol almaktır.
+      <div class="absolute bottom-6 left-6 lg:left-10 z-10 flex items-center gap-3">
+        <span class="w-2.5 h-2.5 rounded-full bg-sky-400 animate-pulse"></span>
+        <span class="text-xs font-mono tracking-[0.25em] uppercase text-neutral-300 font-semibold">TEST SÜRÜŞÜ • KÖPRÜ ETABI</span>
+      </div>
+    </div>
+
+    <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
+      
+      <div class="lg:col-span-6 space-y-4">
+        <h4 class="text-2xl font-bold text-white tracking-tight">Geçmişin Mirası, Geleceğin Teknolojisi</h4>
+        <p class="text-sm leading-relaxed text-neutral-400 font-light">
+          Legacy, Türk mühendisliğinin vizyonu ve inovatif tasarım felsefesiyle yola çıktı. Amacımız yalnızca bir otomobil üretmek değil; asfaltla buluştuğu ilk andan itibaren sürücüsüne güven, tutku ve kesintisiz dijital bağlanabilirlik sunan bütünleşik bir mobilite ekosistemi inşa etmektir.
         </p>
-        <button class="px-6 py-2.5 rounded-full border border-white/20 text-xs font-semibold tracking-wider uppercase text-white hover:bg-white hover:text-black transition">
-          Daha Fazla →
-        </button>
+        <p class="text-xs leading-relaxed text-neutral-500 font-light">
+          Yerli tedarik zincirimiz, yüksek verimli elektrikli mimarimiz ve sıfır emisyonlu üretim tesislerimizle geleceğe doğru kararlılıkla yol alıyoruz.
+        </p>
+        <div class="pt-2">
+          <button class="px-6 py-2.5 rounded-full border border-white/20 text-xs font-semibold tracking-wider uppercase text-white hover:bg-white hover:text-black transition">
+            Üretim Tesislerimizi Keşfet →
+          </button>
+        </div>
       </div>
 
-      <div class="lg:col-span-4 space-y-6 lg:pl-8 border-t lg:border-t-0 lg:border-l border-white/5 pt-8 lg:pt-0">
+      <div class="lg:col-span-6 grid grid-cols-1 sm:grid-cols-2 gap-6 border-t lg:border-t-0 lg:border-l border-white/5 pt-8 lg:pt-0 lg:pl-10">
+        
         <div class="flex items-start gap-4">
-          <span class="text-neutral-500 text-lg">⚡</span>
+          <span class="text-neutral-400 text-xl">⚡</span>
           <div>
-            <h4 class="text-xs font-bold tracking-wider uppercase text-white">Yerli Üretim</h4>
-            <p class="text-[11px] text-neutral-400 font-light">Türkiye'de tasarlanır, Türkiye'de üretilir.</p>
+            <h5 class="text-xs font-bold tracking-wider uppercase text-white mb-1">Yerli Üretim</h5>
+            <p class="text-[11px] text-neutral-400 font-light leading-relaxed">Türkiye'de tasarlanır, yerli mühendislik ve zanaatla üretilir.</p>
           </div>
         </div>
 
         <div class="flex items-start gap-4">
-          <span class="text-neutral-500 text-lg">🔋</span>
+          <span class="text-neutral-400 text-xl">🔋</span>
           <div>
-            <h4 class="text-xs font-bold tracking-wider uppercase text-white">Elektrikli Gelecek</h4>
-            <p class="text-[11px] text-neutral-400 font-light">Temiz enerji, temiz bir dünya.</p>
+            <h5 class="text-xs font-bold tracking-wider uppercase text-white mb-1">Elektrikli Gelecek</h5>
+            <p class="text-[11px] text-neutral-400 font-light leading-relaxed">Yeni nesil yüksek menzilli hücre mimarisi ve sıfır emisyon.</p>
           </div>
         </div>
 
         <div class="flex items-start gap-4">
-          <span class="text-neutral-500 text-lg">⚙️</span>
+          <span class="text-neutral-400 text-xl">⚙️</span>
           <div>
-            <h4 class="text-xs font-bold tracking-wider uppercase text-white">İnovasyon</h4>
-            <p class="text-[11px] text-neutral-400 font-light">Sürekli gelişen teknoloji.</p>
+            <h5 class="text-xs font-bold tracking-wider uppercase text-white mb-1">İnovasyon</h5>
+            <p class="text-[11px] text-neutral-400 font-light leading-relaxed">Havadaki güncellemeler (OTA) ve yapay zeka destekli otonom sürüş.</p>
           </div>
         </div>
 
         <div class="flex items-start gap-4">
-          <span class="text-neutral-500 text-lg">🌱</span>
+          <span class="text-neutral-400 text-xl">🌱</span>
           <div>
-            <h4 class="text-xs font-bold tracking-wider uppercase text-white">Sürdürülebilirlik</h4>
-            <p class="text-[11px] text-neutral-400 font-light">Bugünün kaynakları, yarının nesilleri için.</p>
+            <h5 class="text-xs font-bold tracking-wider uppercase text-white mb-1">Sürdürülebilirlik</h5>
+            <p class="text-[11px] text-neutral-400 font-light leading-relaxed">Geri dönüştürülebilir hafif alaşımlar ve vegan kokpit malzemeleri.</p>
           </div>
         </div>
+
       </div>
 
     </div>
   </section>
 
-  <!-- Footer -->
   <footer class="border-t border-white/10 py-8 px-6 lg:px-12 bg-black">
     <div class="max-w-[1600px] mx-auto flex flex-col md:flex-row items-center justify-between gap-4 text-xs text-neutral-500 font-medium">
       <div class="flex items-center gap-3">
@@ -387,7 +385,6 @@
     </div>
   </footer>
 
-  <!-- SCRIPT: MODEL DETAY VERİLERİ & DEĞİŞİMİ -->
   <script>
     const vehicleData = [
       {
@@ -529,20 +526,18 @@
       currentVehicle = vehicleData[index];
       currentTrim = "standard";
       
-      // Kartların aktifliğini güncelle
       for (let i = 0; i < 7; i++) {
-        document.getElementById(`card-${i}`).classList.remove("active");
+        const el = document.getElementById(`card-${i}`);
+        if(el) el.classList.remove("active");
       }
-      document.getElementById(`card-${index}`).classList.add("active");
+      const activeEl = document.getElementById(`card-${index}`);
+      if(activeEl) activeEl.classList.add("active");
 
-      // Detay paneline yumuşak kaydır
       document.getElementById("detay-sahnesi").scrollIntoView({ behavior: "smooth" });
-
       renderDetail();
     }
 
     function renderDetail() {
-      // 3D kartı öne al
       const cardBox = document.getElementById("detailCardBox");
       if (isFlipped) {
         cardBox.classList.remove("flipped");
@@ -554,7 +549,6 @@
       document.getElementById("detailTitle").innerText = currentVehicle.title;
       document.getElementById("detailDesc").innerText = currentVehicle.desc;
       
-      // Fiyat ve Trim Ayarı
       const trimBox = document.getElementById("trimOptions");
       if (currentVehicle.hasTrims) {
         trimBox.classList.remove("hidden");
@@ -565,11 +559,9 @@
         document.getElementById("detailPrice").innerText = currentVehicle.priceStd;
       }
 
-      // Resimler
       document.getElementById("detailFrontImg").style.backgroundImage = `url('${currentVehicle.image}')`;
       document.getElementById("detailBackImg").style.backgroundImage = `url('${currentVehicle.image}')`;
 
-      // Özellikler
       document.getElementById("specEngine").innerText = currentVehicle.engine;
       document.getElementById("specPower").innerText = currentVehicle.power;
       document.getElementById("specDrive").innerText = currentVehicle.drive;
@@ -610,7 +602,6 @@
       document.getElementById("colorName").innerText = name;
     }
 
-    // Başlangıçta Pars (Sport) seçili gelsin
     renderDetail();
   </script>
 </body>
